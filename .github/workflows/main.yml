@@ -40,7 +40,9 @@ jobs:
           sudo apt update
           sudo apt-get install terraform
           terraform --version
-          env
+      
+      - name: Create ECR using Terraform
+        run: |
           terraform init
           terraform plan
           terraform apply -auto-approve
