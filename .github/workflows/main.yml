@@ -44,5 +44,5 @@ jobs:
       - name: Create ECR using Terraform
         run: |
           terraform init
-          terraform plan
-          terraform apply -auto-approve
+          # terraform plan
+          terraform destroy -auto-approve
